@@ -17,3 +17,21 @@ print("Phyton \nchallenge")
 print("Semana 1 \tSemana 2 \tSemana 3")
 print("Simbolo(\\)")
 print(f"Mi nombre es {nombre} y mi apellido es {apellido}")
+languaje = "Python"
+a, b, c, d, e, f = languaje
+print(a)
+languaje = "Python"
+print(languaje[0:3])
+print(languaje[1])
+print(languaje[2])
+print(languaje[3])
+print(languaje[4])
+
+last_tree = languaje[-3:]
+print(last_tree)
+
+greeting = "Hello, World!"
+print(greeting[::-1])
+
+challenge = "Treinta dias en Python"
+print()
