@@ -63,3 +63,6 @@ print("El valor de y para x = ", x, " es: ", y)
 
 # Longitud de una palabra
 # %%
+palabra = "Python"
+print("i" in palabra)
+# %%
