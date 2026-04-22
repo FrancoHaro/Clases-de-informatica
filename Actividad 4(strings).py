@@ -1,3 +1,4 @@
+# %%
 stringVariasLineas = """
 Franco
 Haro
@@ -35,3 +36,77 @@ print(greeting[::-1])
 
 challenge = "Treinta dias en Python"
 print()
+# %%
+
+# Actividad 4 (strings)
+# %%
+# Crear la variable 
+
+texto = "Programación Para Todos" 
+
+# Mostrar el contenido 
+
+print(f"Contenido: {texto}") 
+
+# Cantidad de caracteres 
+
+print(f"Longitud: {len(texto)}") 
+
+print(texto.upper())       # MAYÚSCULAS 
+
+print(texto.lower())       # minúsculas 
+
+print(texto.title())       # Formato De Título 
+
+print(texto.capitalize())  # Solo la primera letra 
+
+print(texto.startswith("Programación")) # True 
+
+print(texto.endswith("Todos"))          # True 
+
+print(texto.find("Para"))               # 13 (posición de inicio) 
+
+print("Python" in texto)                # False (no está en la cadena original) 
+
+# Reemplazar palabra 
+
+nuevo_texto = texto.replace("Programación", "Python") 
+
+print(nuevo_texto) 
+
+# Dividir en palabras 
+
+palabras = texto.split() 
+
+print(palabras)  # ['Programación', 'Para', 'Todos'] 
+
+# Unir con un separador 
+
+unido = " - ".join(palabras) 
+
+print(unido)     # Programación - Para – Todos 
+
+print(f"Primer carácter: {texto[0]}")     # 'P' 
+
+print(f"Último carácter: {texto[-1]}")    # 's' 
+
+print(f"Carácter en pos 5: {texto[5]}")   # 'a' 
+
+
+mi_nombre = "Gemini AI" 
+
+
+# Mensaje con f-string 
+
+print(f"Hola, mi nombre es {mi_nombre}") 
+
+
+# Acronimo
+
+# Crear un acrónimo (G.A.) 
+
+# Dividimos el nombre y tomamos la primera letra de cada parte 
+
+acronimo = "".join([palabra[0] for palabra in mi_nombre.split()]) 
+
+print(f"Acrónimo: {acronimo}") 
