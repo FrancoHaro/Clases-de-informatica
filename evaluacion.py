@@ -63,7 +63,7 @@ print("Valor estimado: " + str(valor))
 # Respuesta 1:
 """
 a) ¿Cuáles eran los errores principales?
-Los errores eran que se intentaba hacer operaciones matematicas con variables tipo string.
+Los errores eran que se intentaba hacer operaciones matematicas con variables tipo string en vez de usar variables tipo float.
 """
 # Respuesta 2:
 """
@@ -87,5 +87,31 @@ print(len(texto))
 print("Python" in texto)
 print(texto.replace("útil", "interesante"))
 print(texto.split())
+"""
 
+# ===== PARTE C =====
+# Programa integrador
 
+print("Ingrese su nombre: ")
+nombre = input()
+print("Ingrese su apellido: ")
+apellido = input()
+print("Ingrese su pais: ")
+pais = input()
+print("Ingrese el ancho de la vitrina en metros: ")
+ancho = input()
+print("Ingrese el alto de la vitrina en metros: ")
+alto = input()
+print("Ingrese el precio por metro cuadrado: ")
+precio = input()
+area_vitrina = float(ancho) * float(alto)
+costoTotalEstimado = area_vitrina * float(precio)
+nombre_completo = nombre + " " + apellido
+print(f"Nombre completo: {nombre_completo}")
+print(f"País: {pais}")
+print(f"Area calculada: {area_vitrina}")
+print(f"Costo estimado: {costoTotalEstimado}")
+print(f"Nombre completo en mayúsculas: {nombre_completo.upper()}")
+print(f"Cantidad de caracteres del nombre completo: {len(nombre_completo)}")
+print(f"¿El nombre completo contiene la letra 'a'? {'a' in nombre_completo}")
+print(f"El costo total es mayor a 100: {costoTotalEstimado > 100}")
