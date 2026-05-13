@@ -36,3 +36,36 @@ for letra in palabra:
 print(f"El número de consonantes en la palabra '{palabra}' es: {consonantes}")
 print(f"El número de vocales en la palabra '{palabra}' es: {vocales}")
 print(f"El número total de letras en la palabra '{palabra}' es: {letras}")
+
+# %%
+it_companies = {"Facebook", "Google", "Apple", "Amazon", "Facebook"}
+for company in it_companies:
+    print(company)
+# %%
+
+# %%
+numbers = [1, 2, 3, 4, 5]
+for number in numbers:
+    print(number)
+    if number == 3:
+        print("Numero encontrado")
+        break
+    print("Numero no existe")
+# %%
+# %%
+lista = [1, 2, 3, 4, 5, 6]
+number = int(input("Ingrese un número: "))
+for num in lista:
+    if num == number:
+        print("Número encontrado")
+        break
+else:
+    print("Número no encontrado")
+# %%
+cedula_limpia = ""
+cedula = input("Ingrese su número de cédula: ")
+for caracter in cedula:
+    if caracter == "-" or caracter == " ":
+        continue
+    cedula_limpia = cedula_limpia + caracter
+print("Número de cédula limpio:", cedula_limpia)    
